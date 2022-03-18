@@ -1,0 +1,56 @@
+/* First, take care of the text: choose an appropriate font-family, size, weight and color */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;1,200&display=swap');
+
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  color: hsl(220, 15%, 55%)
+}
+
+/* Second, add proper background colors */
+
+body {
+  background-color: hsl(212, 45%, 89%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contain {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 1rem;
+  
+  
+}
+
+/* Third, allign text to the center*/
+
+h1,p {
+  text-align: center;
+}
+
+
+/* Finally, identify the borders correctly(
+from https://github.com/SankThomas/qr-code-component/blob/main/styles.css
+)*/
+
+@media (min-width: 500px) {
+  .contain {
+    width: 400px;
+  }
+}
