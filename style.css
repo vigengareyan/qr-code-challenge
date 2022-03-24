@@ -1,56 +1,46 @@
-/* First, take care of the text: choose an appropriate font-family, size, weight and color */
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;1,200&display=swap');
-
-h1 {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-}
-
-p {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 400;
-  color: hsl(220, 15%, 55%)
-}
-
-/* Second, add proper background colors */
+/* Background colors*/
 
 body {
   background-color: hsl(212, 45%, 89%);
+}
 
+
+
+header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.contain {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 1rem;
-  margin: 1rem;
-  padding: 1rem;
-}
+.container {
+  max-width: 350px;
+  margin-left: 500px;
+  margin: 120px;
+  background-color: white;
+  border-radius: 10px;
 
-img {
-  max-width: 100%;
-  border-radius: 1rem;
-  
-  
-}
-
-/* Third, allign text to the center*/
-
-h1,p {
+  padding: 10px;
   text-align: center;
 }
 
+img {
+  width: 100%;
+  border-radius: 10px;
+}
 
-/* Finally, identify the borders correctly(
-from https://github.com/SankThomas/qr-code-component/blob/main/styles.css
-)*/
+/* Import the proper font */
 
-@media (min-width: 500px) {
-  .contain {
-    width: 400px;
-  }
+h1,p {
+  font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+p {
+  font-weight: 400;
+  color: hsl(220, 15%, 55%);
+  font-size: 20px;
 }
